@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Delete </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='rnd.css') }}">		
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Are you sure? Confirm Deletion of your Account</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('remove') }}" method="post">
+					<input type="submit" name="LoginBtn1" class="btn" value="Yes">
+            				<input type="submit" name="LoginBtn1" class="btn" value="No"></br></br>
+				</form>
+			</h2>
+			<p class="bottom">want to sign in? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+		</div>
+		</div>
+	</body>
+</html>
+
+
